@@ -1,0 +1,300 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff8240 !important;
+  --secondary: #ffe240 !important;
+  --gray: #e4e3e3 !important;
+  --dark: #343a40 !important;
+  --txt: "Quicksand", sans-serif;
+  --logo: "Pacifico", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: var(--txt);
+}
+
+#nav {
+  background-color: #2a292c;
+}
+
+.navbar {
+  box-shadow: 1px 1px 5px var(--gray);
+}
+
+.navbar-brand {
+  margin-left: 2rem;
+}
+
+.logo,
+.logo:hover {
+  font-size: 30px !important;
+  font-family: var(--logo);
+  color: var(--primary);
+}
+
+.nav-link {
+  color: var(--gray);
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+}
+
+#home {
+  padding-top: 20px;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+  padding-top: 100px !important;
+}
+
+.social-media li,
+.footer-icons li {
+  list-style: none;
+}
+
+.social-media i,
+.footer-icons i {
+  font-size: 36px;
+}
+
+#home i.fab,
+i.fas {
+  color: var(--gray);
+}
+
+#home .fa-instagram::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  transform: translate(-400%, 65%);
+}
+
+.fa-envelope {
+  padding-top: 150px;
+}
+
+#home .fa-linkedin-in::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  transform: translate(-400%, -270%);
+}
+
+#home button {
+  background-color: var(--secondary);
+  border: 2px solid white;
+}
+
+#dev-icons {
+  font-size: 35px;
+  list-style: none;
+  padding: 0 !important;
+}
+
+#dev-icons i:hover {
+  color: var(--primary);
+}
+
+.themed-text {
+  color: var(--primary);
+}
+
+#me-img {
+  background-image: url("/public/assets/image/me-img.png");
+  background-size: cover;
+  width: 40%;
+  height: 400px;
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+
+#me-img::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 9%;
+  background-color: var(--primary);
+  z-index: -1;
+  transform: translate(5%, -10%);
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--logo);
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--gray);
+}
+
+p {
+  font-size: 20px;
+}
+
+.border {
+  border-radius: 10px;
+}
+
+.progress-con {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px var(--gray);
+}
+
+.progress {
+  height: 10px !important;
+}
+
+.progress-bar {
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+#active {
+  color: var(--primary);
+}
+
+.projects-info li {
+  cursor: pointer;
+}
+
+.projects-info i {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.projects-info button {
+  background-color: var(--secondary);
+}
+
+#contact {
+  margin-bottom: 200px;
+}
+
+.form-control {
+  background-color: var(--gray);
+}
+
+.form-group label {
+  color: white;
+}
+
+.form-group input,
+textarea {
+  margin-bottom: 25px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: var(--primary) !important;
+  box-shadow: none;
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem var(--secondary) !important;
+}
+
+form .btn {
+  background-color: var(--secondary);
+}
+
+.footer-icons i,
+.copyright {
+  color: var(--gray);
+}
+
+@media only screen and (max-width: 600px) {
+  #me-img {
+    padding-left: 350px;
+    background-position-y: 20%;
+  }
+
+  #me-img::after {
+    display: none;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .intro-text {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  #me-img::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 6.25%;
+    background-color: var(--primary);
+    z-index: -1;
+    transform: translate(5%, 2%);
+  }
+
+  #home button {
+    height: 50px;
+    width: 200px;
+    transform: translate(68%);
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #contact,
+  #location {
+    padding-top: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  #me-img::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 8%;
+    background-color: var(--primary);
+    z-index: -1;
+    transform: translate(5%, 2%);
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #contact,
+  #location {
+    padding-top: 25px !important;
+  }
+}
